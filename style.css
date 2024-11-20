@@ -1,0 +1,55 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #181818;
+    background-image: url('background-music-notes.png'); /* Background image with musical notes */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.band {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instrument {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #3a3a3a, #6c6c6c);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.instrument:hover {
+    transform: scale(1.1);
+    background: #ff7f50;
+}
+
+.instrument:active {
+    transform: scale(0.9);
+    background: #ff6347;
+}
